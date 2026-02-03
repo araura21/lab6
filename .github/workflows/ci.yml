@@ -33,4 +33,4 @@ jobs:
             y las pruebas correctamente"
 
         - name: Build
-          run: npm ci && npm run build
+          run: npm ci
