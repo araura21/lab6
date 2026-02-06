@@ -6,4 +6,4 @@ function fibonacci(n) {
     return fib[n]; 
 }
 
-module.exports = fibonacci;
+module.exports = math;
