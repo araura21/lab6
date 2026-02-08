@@ -28,3 +28,4 @@ describe('Pruebas unitarias para funciones matemáticas', () => {
         expect(fibonacci(-5)).toBeNull();
     });
 });
+
