@@ -6,4 +6,12 @@ function fibonacci(n) {
     return fib[n]; 
 }
 
+
+function factorial(n) {
+  if (n < 0) return "No definido para negativos"; 
+  if (n === 0 || n === 1) return 1; 
+  return n * factorial(n - 1); 
+}
+
+
 module.exports = math;
