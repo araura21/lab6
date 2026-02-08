@@ -1,9 +1,24 @@
-function fibonacci(n) {
-    let fib = [0, 1];
+const factorial = (n) => {
+    if (n < 0) return null;
+    if (n === 0 || n === 1) return 1;
+    let result = 1;
     for (let i = 2; i <= n; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
+        result *= i;
     }
-    return fib[n]; 
-}
+    return result;
+};
 
-module.exports = fibonacci;
+const fibonacci = (n) => {
+    if (n < 0) return null;
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    let a = 0, b = 1;
+    for (let i = 2; i <= n; i++) {
+        let temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+};
+
+module.exports = { factorial, fibonacci };
