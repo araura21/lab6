@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI + Hosting estático</title>
+    <title>Perfil — Clima & Conversión</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .presentacion {
+            margin: 20px 0;
+            text-align: justify;
+            color: #555;
+        }
+
+        ul {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Sitio estático!</h1>
-    <p id="out"></p>
-    <script src="./app.js"></script>
-    
+    <header>
+        <h1>Perfil — Clima & Conversion</h1>
+    </header>
+
+    <main>
+        <h2>Mi Perfil</h2>
+
+        <div class="info">
+            <label>Nombre completo:</label>
+            <span>Andrea Katherine Raura Negrete</span>
+        </div>
+        <div class="info">
+            <label>NRC:</label>
+            <span>27857</span>
+        </div>
+        <div class="info">
+            <label>Correo institucional:</label>
+            <span>akraura@espe.edu.ec</span>
+        </div>
+
+        <div class="presentacion">
+            <h3>Presentación</h3>
+            <p>
+                Hola, soy Andrea. Tengo 21 años, estudio en la Universidad de las Fuerzas Armadas, 
+                mi carrera es Ingeniería de Software en el Departamento de Ciencias de la Computación..
+                Me gusta manejar para ir de viaje, jugar en mi computadora y también caminar por senderos,
+                además, soy alguien a quien le gusta la tecnología. 
+            </p>
+        </div>
+
+        <div>
+            <h3>Datos Personales</h3>
+            <ul>
+                <li>Nací el 21 de abril del 2004</li>
+                <li>Resido en Quito, Ecuador</li>
+                <li>Tengo 3 mascotas</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>2026 — Mi perfil</p>
+        <p>CD con Firebase Hosting</p>
+    </footer>
 </body>
 </html>
