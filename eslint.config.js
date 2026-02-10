@@ -1,4 +1,7 @@
-export default[
+export default [
+    {
+        ignores: ['coverage/', 'node_modules/', '.firebase/', 'public/']
+    },
     {
         files: ['**/*.js'],
         languageOptions: {

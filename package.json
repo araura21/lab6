@@ -7,9 +7,23 @@
     "start": "node index.js",
     "test": "jest",
     "lint": "eslint",
+    "coverage": "jest --coverage",
     "build": "echo 'No build step defined'"
   },
   "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 80,
+        "branches": 80
+      }
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -27,5 +27,8 @@ jobs:
         - name: Ejecutar pruebas
           run: npm test
 
+        - name: Verificar cobertura (≥80%)
+          run: npm run coverage
+
         - name: Build
           run: npm ci && npm run build
