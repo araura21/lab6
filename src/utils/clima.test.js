@@ -40,7 +40,7 @@ describe('Clima y Conversion', () => {
             expect(toFahrenheit(37)).toBe(98.6);
         });
 
-        test('Debe lanzar TypeError si el valor no es finito', () => {
+        test('Debe mostrar TypeError si el valor no es finito', () => {
             expect(() => toFahrenheit(NaN)).toThrow(TypeError);
             expect(() => toFahrenheit('abc')).toThrow(TypeError);
         });
